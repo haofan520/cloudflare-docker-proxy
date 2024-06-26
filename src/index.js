@@ -1,19 +1,11 @@
+import DOCS from './help.html'
+
 addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
 });
-import DOCS from './help.html'
- 
-// return docs
-if (url.pathname === "/") {
-  return new Response(DOCS, {
-    status: 200,
-    headers: {
-      "content-type": "text/html"
-    }
-  });
-}
 
+ 
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
@@ -40,6 +32,15 @@ function routeByHosts(host) {
 async function handleRequest(request) {
   const url = new URL(request.url);
   const upstream = routeByHosts(url.hostname);
+  // return docs
+  if (url.pathname === "/") {
+    return new Response(DOCS, {
+      status: 200,
+      headers: {
+      "content-type": "text/html"
+      }
+    });
+}
   if (upstream === "") {
     return new Response(
       JSON.stringify({
