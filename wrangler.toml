@@ -16,7 +16,7 @@ routes = [
   { pattern = "docker.kang141841013.eu.org", custom_domain = true },
   { pattern = "quay.kang141841013.eu.org", custom_domain = true },
   { pattern = "gcr.kang141841013.eu.org", custom_domain = true },
-  { pattern = "k8s-kang141841013.eu.org", custom_domain = true },
+  { pattern = "k8s-gcr.kang141841013.eu.org", custom_domain = true },
   { pattern = "k8s.kang141841013.eu.org", custom_domain = true },
   { pattern = "ghcr.kang141841013.eu.org", custom_domain = true },
   { pattern = "cloudsmith.kang141841013.eu.org", custom_domain = true },
