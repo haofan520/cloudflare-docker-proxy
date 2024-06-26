@@ -11,12 +11,12 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "docker.registry.kang141841013.eu.org": "https://registry-1.docker.io",
-  "quay.registry.kang141841013.eu.org": "https://quay.io",
-  "gcr.registry.kang141841013.eu.org": "https://gcr.io",
-  "k8s-gcr.registry.kang141841013.eu.org": "https://k8s.gcr.io",
-  "k8s.registry.kang141841013.eu.org": "https://registry.k8s.io",
-  "ghcr.registry.kang141841013.eu.org": "https://ghcr.io",
-  "cloudsmith.registry.kang141841013.eu.org": "https://docker.cloudsmith.io"
+  "quay.kang141841013.eu.org": "https://quay.io",
+  "gcr.kang141841013.eu.org": "https://gcr.io",
+  "k8s-gcr.kang141841013.eu.org": "https://k8s.gcr.io",
+  "k8s.kang141841013.eu.org": "https://registry.k8s.io",
+  "ghcr.kang141841013.eu.org": "https://ghcr.io",
+  "cloudsmith.kang141841013.eu.org": "https://docker.cloudsmith.io"
 };
 
 function routeByHosts(host) {
